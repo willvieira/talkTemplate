@@ -1,0 +1,143 @@
+/*title page*/
+  .title-slide {
+    background-image: url(../../images/background.png);
+    background-size: cover;
+  }
+
+  .title-slide h1,
+  .title-slide h2,
+  .title-slide h3 {
+    text-align: left !important;
+    width: 55% !important;
+    text-shadow: none !important;
+    color: #42766a !important;
+  }
+
+  .title-slide {
+    padding: 1em 4em 1em 2em !important;
+  }
+
+  /* remove page number in first slide*/
+  .title-slide .remark-slide-number {
+  display: none;
+  }
+
+  /* the part where I add event logo and Github*/
+  .title-slide p {
+    font-family: 'Yanone Kaffeesatz';
+    text-align: left;
+    display: block;
+    margin-top: 0em;
+    margin-bottom: -4em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+/* slide pages */
+  .remark-slide-content h2,
+  .remark-slide-content h3 {
+    margin: .28em .1em;
+  }
+
+/* citation in bottomright page*/
+.cite {
+    bottom: 12px;
+    font-style: italic;
+    opacity: .8;
+    position: absolute;
+    right: 100px;
+}
+
+/* page number*/
+.remark-slide-number {
+  bottom: 11px;
+  opacity: .6;
+  position: absolute;
+  right: 20px;
+}
+
+/* hyperlink color */
+a {
+  color: #42766a;
+}
+
+/* background color of inverse slide */
+.inverse {
+    background-color: #325049;
+    color: #d6d6d6;
+}
+
+/* Column */
+  .pull-left {
+    float: left;
+    width: 47%;
+  }
+  .pull-right {
+    float: right;
+    width: 47%;
+  }
+
+  .pull-left1 {
+    float: left;
+    width: 57%;
+  }
+  .pull-right1 {
+    float: right;
+    width: 37%;
+  }
+
+  .pull-left2 {
+    float: left;
+    width: 67%;
+  }
+  .pull-right2 {
+    float: right;
+    width: 27%;
+  }
+
+/* Font size */
+  .huge {
+    font-size: 2em;
+  }
+
+  .Large {
+    font-size: 1.5em;
+  }
+
+  .large {
+    font-size: 1.2em;
+  }
+
+  .small {
+    font-size: .9em;
+  }
+
+  .tiny {
+    font-size: .6em;
+  }
+
+/* MathJax */
+  .mjx-chtml{
+    font-size: 105% !important;
+    float: left !important;
+    padding: 0em 0em 0em 4.5em !important;
+  }
+
+/* progress */
+  .remark-slide-number {
+    position: inherit;
+  }
+
+  .remark-slide-number .progress-bar-container {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    display: block;
+    left: 0;
+    right: 0;
+  }
+
+  .remark-slide-number .progress-bar {
+    height: 100%;
+    background-color: #325049;
+  }

@@ -1,0 +1,45 @@
+---
+output:
+  xaringan::moon_reader:
+  #  self_contained: TRUE
+    includes:
+      in_header: conf/style-header.html
+    lib_dir: assets
+    seal: false
+    css: ["default", "conf/css/style.css", "conf/css/fonts.css"]
+    nature:
+      beforeInit: "conf/style-macros.js"
+      slideNumberFormat: | # to add a progress bar
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+---
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(
+  comment = "#",
+  #cache = TRUE,
+  collapse = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 7,
+  fig.height = 5.25,
+  fig.align = 'center'
+)
+
+mypar = list(mar = c(3,3,0.5,0.5), mgp = c(1.5, 0.3, 0), tck = -.008)
+```
+class: middle, title-slide
+
+# My talk template
+
+## My talk subtitle
+
+### Willian Vieira, .small[PhD candidate <br> + Collaborators]
+
+<br><br><br><br><br>
+<i class="fa fa-github fa-2x" style="color:#335049"></i> [WillVieira/talkTemplate](https://github.com/willvieira/talkTemplate)
+
+<i class="fa fa-twitter fa-2x" style="color:#335049"></i> [@WillVieira90](https://twitter.com/willvieira90)
+
