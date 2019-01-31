@@ -39,6 +39,10 @@
     margin: .28em .1em;
   }
 
+  .remark-slide-content li {
+  line-height: 1.5
+  }
+
 /* citation in bottomright page*/
 .cite {
     bottom: 12px;
