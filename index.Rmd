@@ -43,3 +43,23 @@ class: middle, title-slide
 
 <i class="fa fa-twitter fa-2x" style="color:#335049"></i> [@WillVieira90](https://twitter.com/willvieira90)
 
+---
+class: inverse
+
+.pull-left1[
+<br>
+
+# Key message here
+
+<br><br><br><br><br><br><br><br>
+
+**Special thanks to**
+
+Nice people
+]
+
+.pull-right1[
+<br>
+<br>
+![:scale 90%](images/logo.png)
+]
