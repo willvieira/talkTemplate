@@ -1,6 +1,6 @@
-ASS=assets/*
-CONF=conf/*
-IMG=images/*
+ASS=$(shell find assests)
+CONF=$(shell find conf)
+IMG=images
 IND=index
 
 $(IND).html: $(IND).Rmd $(IMG) $(CONF) $(ASS)
