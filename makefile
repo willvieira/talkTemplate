@@ -13,7 +13,7 @@ pdf:
 	`npm bin`/decktape --chrome-arg=--allow-file-access-from-files index.html slides.pdf
 
 install:
-	Rscript -e 'if (!require(rmarkdown)) install.packages("rmarkdown"); if (!require(knitr)) install.packages("knitr"); if (!require(xaringan)) install.packages("xaringan"); if (!require(pBrackets)) install.packages("pBrackets", dep = T); if (!require(latex2exp)) install.packages("latex2exp", dep = T)'
+	Rscript -e 'if (!require(rmarkdown)) install.packages("rmarkdown"); if (!require(knitr)) install.packages("knitr"); if (!require(xaringan)) install.packages("xaringan")'
 
 clean:
 	rm -rf index_cache index_files index.html
