@@ -1,0 +1,10 @@
+r_packages:
+  - rmarkdown
+  - knitr
+  - xaringan
+  - emo
+  - githubinstall
+  - RefManageR
+  - stringr
+r_github_packages:
+  - hadley/emo
