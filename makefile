@@ -1,9 +1,8 @@
-ASS=$(shell find assets)
 CONF=$(shell find conf)
 IMG=images
 IND=index
 
-$(IND).html: $(IND).Rmd $(IMG) $(CONF) $(ASS)
+$(IND).html: $(IND).Rmd $(IMG) $(CONF)
 	Rscript -e "rmarkdown::render('$(IND).Rmd', 'xaringan::moon_reader')"
 
 server:
@@ -13,7 +12,7 @@ pdf:
 	`npm bin`/decktape --chrome-arg=--allow-file-access-from-files index.html slides.pdf
 
 install:
-	Rscript -e 'if (!require(rmarkdown)) install.packages("rmarkdown"); if (!require(knitr)) install.packages("knitr"); if (!require(xaringan)) install.packages("xaringan")'
+	Rscript -e 'if (!require(rmarkdown)) install.packages("rmarkdown"); if (!require(knitr)) install.packages("knitr"); if (!require(xaringan)) install.packages("xaringan"); if (!require(emo)) devtools::install_github("hadley/emo"); if (!require(knitr)) install.packages("knitr"); if (!require(xaringan)) install.packages("xaringan"); if (!require(DT)) devtools::install_github("rstudio/DT")'
 
 clean:
 	rm -rf index_cache index_files index.html
