@@ -1,4 +1,5 @@
 ---
+title: Talk template
 output:
   xaringan::moon_reader:
   #  self_contained: TRUE
