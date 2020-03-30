@@ -1,20 +1,54 @@
 /*title page*/
   .title-slide {
-    background-image: url(../../images/background.png);
-    background-size: cover;
+    background-image: url('../../images/bg.jpg');
+    background-color: #23373B;
+    background-size: contain;
+    border: 0px;
+    background-position: 600px 0;
+    line-height: 1;
+    padding: 8em 2em 1em 2em!important;
   }
 
-  .title-slide h1,
-  .title-slide h2,
+  .title-slide h1 {
+    color: #e7e8e2;
+    font-size: 47px!important;
+    font-weight: normal;
+    margin-top: 0px;
+    width: 65%;
+    margin-block-end: 0;
+  }
+
+  .title-slide h2 {
+    color: #e7e8e2;
+    font-size: 42px;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 65%;
+  }
+
   .title-slide h3 {
-    text-align: left !important;
-    width: 55% !important;
-    text-shadow: none !important;
-    color: #42766a !important;
+    color: #e7e8e2;
+    font-size: 24px;
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 65%;
   }
 
-  .title-slide {
-    padding: 1em 4em 1em 2em !important;
+  .title-slide a {
+    color: #e7e8e2;
+    font-size: 20px;
+    font-weight: lighter;
+
+  }
+
+  h1 {
+    color: #000000;
+    font-size: 42px!important;
+    font-weight: normal;
+    margin-top: 0px;
+    width: 65%;
   }
 
   /* remove page number in first slide*/
@@ -22,21 +56,36 @@
   display: none;
   }
 
+  /* remove page number in first slide*/
+  .inverse .remark-slide-number {
+  display: none;
+  }
+
   /* the part where I add event logo and Github*/
   .title-slide p {
-    font-family: 'Yanone Kaffeesatz';
+    font-family: 'Fira Sans';
     text-align: left;
+    font-weight: lighter;
     display: block;
     margin-top: 0em;
-    margin-bottom: -4em;
+    margin-bottom: 0.5em;
     margin-left: 0;
     margin-right: 0;
   }
-
+  
 /* slide pages */
-  .remark-slide-content h2,
-  .remark-slide-content h3 {
-    margin: .28em .1em;
+  .remark-slide-content {
+    font-size: 23px;
+    font-weight: 300;
+    padding: 1em 2em 1em 2em
+  }
+
+  .remark-slide-content h2{
+    margin: .31em .1em;
+  }
+
+  .remark-slide-content h3{
+    margin: 2em .1em;
   }
 
   .remark-slide-content li {
@@ -50,14 +99,17 @@
     opacity: .8;
     position: absolute;
     right: 100px;
+    font-size: 17px;
 }
 
 /* page number*/
 .remark-slide-number {
-  bottom: 11px;
-  opacity: .6;
+  font-size: 13pt;
+  font-family: 'Fira Sans';
+  font-weight: lighter;
+  color: #272822;
+  opacity: 1;
   position: absolute;
-  right: 20px;
 }
 
 /* hyperlink color */
@@ -67,8 +119,12 @@ a {
 
 /* background color of inverse slide */
 .inverse {
-    background-color: #325049;
+    background-color: #23373B;
     color: #d6d6d6;
+}
+.inverse h1 {
+  font-size: 54px!important;
+  width: 100%;
 }
 
 /* Column */
@@ -100,48 +156,126 @@ a {
   }
 
 /* Font size */
-  .huge {
-    font-size: 2em;
+  .code10 .remark-code {
+    font-size: 10%;
   }
 
-  .Large {
-    font-size: 1.5em;
+  .code20 .remark-code {
+    font-size: 20%;
   }
 
-  .large {
-    font-size: 1.2em;
+  .code30 .remark-code {
+    font-size: 30%;
   }
 
-  .small {
-    font-size: .9em;
+  .code40 .remark-code {
+    font-size: 40%;
   }
 
-  .tiny {
-    font-size: .6em;
+  .code50 .remark-code {
+    font-size: 50%;
   }
+
+  .code60 .remark-code {
+    font-size: 60%;
+  }
+
+  .code70 .remark-code {
+    font-size: 70%;
+  }
+
+  .code80 .remark-code {
+    font-size: 80%;
+  }
+
+  .code90 .remark-code {
+    font-size: 90%;
+  }
+
+  .code100 .remark-code {
+    font-size: 100%;
+  }
+
+  .font10 {
+    font-size: 10%;
+  }
+
+  .font20 {
+    font-size: 20%;
+  }
+
+  .font30 {
+    font-size: 30%;
+  }
+
+  .font40 {
+    font-size: 40%;
+  }
+
+  .font50 {
+    font-size: 50%;
+  }
+
+  .font60 {
+    font-size: 60%;
+  }
+
+  .font70 {
+    font-size: 70%;
+  }
+
+  .font80 {
+    font-size: 80%;
+  }
+
+  .font90 {
+    font-size: 90%;
+  }
+
+  .font100 {
+    font-size: 100%;
+  }
+
+  .font110 {
+    font-size: 110%;
+  }
+
+  .font120 {
+    font-size: 120%;
+  }
+
+  .font130 {
+    font-size: 130%;
+  }
+
+  .font140 {
+    font-size: 140%;
+  }
+
+  .font150 {
+    font-size: 150%;
+  }
+
+  .font160 {
+    font-size: 160%;
+  }
+  .font170 {
+    font-size: 170%;
+  }
+  .font180 {
+    font-size: 180%;
+  }
+  .font190 {
+    font-size: 190%;
+  }
+  .font200 {
+    font-size: 200%;
+  }
+
 
 /* MathJax */
   .mjx-chtml{
     font-size: 105% !important;
     float: left !important;
     padding: 0em 0em 0em 4.5em !important;
-  }
-
-/* progress */
-  .remark-slide-number {
-    position: inherit;
-  }
-
-  .remark-slide-number .progress-bar-container {
-    position: absolute;
-    bottom: 0;
-    height: 4px;
-    display: block;
-    left: 0;
-    right: 0;
-  }
-
-  .remark-slide-number .progress-bar {
-    height: 100%;
-    background-color: #325049;
   }
