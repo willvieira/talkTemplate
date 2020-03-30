@@ -1,0 +1,21 @@
+language: r
+sudo: false
+cache: packages
+warnings_are_errors: false
+
+os:
+  - linux
+#  - osx
+
+install: make install    
+
+script: make
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_PAT
+  keep_history: true
+  local-dir: docs
+  on:
+    branch: master
