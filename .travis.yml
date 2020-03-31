@@ -11,6 +11,14 @@ install: make install
 
 script: make
 
+before_deploy:
+  - mkdir docs
+  - mv index.html docs/
+  - mv index_files docs/
+  - mv assets docs/
+  - mv conf docs/
+  - mv images docs/
+
 deploy:
   provider: pages
   skip_cleanup: true

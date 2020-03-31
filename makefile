@@ -6,7 +6,7 @@ $(IND).html: $(IND).Rmd $(IMG) $(CONF)
 	Rscript -e "rmarkdown::render('$(IND).Rmd', 'xaringan::moon_reader')"
 
 server:
-	Rscript -e "xaringan::infinite_moon_reader('$(IND).Rmd', output_dir = 'docs')"
+	Rscript -e "xaringan::infinite_moon_reader('$(IND).Rmd')"
 
 pdf:
 	`npm bin`/decktape --chrome-arg=--allow-file-access-from-files index.html slides.pdf
