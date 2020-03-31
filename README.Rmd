@@ -4,7 +4,9 @@ output:
     keep_md: true
 ---
 
-
+```{r, echo = FALSE}
+mypar = list(mar = c(3,3,0.5,0.5), mgp = c(1.5, 0.3, 0), tck = -.008)
+```
 
 # talkTemplate
 
@@ -13,7 +15,7 @@ output:
 
 ## Setup
 
-It is recomended to install all (R packages 📦) dependencies:
+It is recomended to install all (R packages `r emo::ji("package")`) dependencies:
 
 ```make
 make install
@@ -39,8 +41,7 @@ make
 
 Slides are separeted by `---`:
 
-
-```markdown
+```{markdown}
 ---
 # My slide title
 
@@ -83,8 +84,7 @@ You can simply insert a markdown table:
 Or you can use the `DT` R package for dynamic tables:
 
 
-
-```r
+```{r,eval=F}
 DT::datatable(head(cars))
 ```
 
@@ -92,8 +92,7 @@ DT::datatable(head(cars))
 
 Insert an image:
 
-
-```markdown
+```{markdown}
 ![](images/model1.svg)
 ```
 
@@ -118,8 +117,7 @@ plot(cars$speed, cars$dist)
 Use the code chunck options to change the size of a plot :
 
 ```md
-
-```r
+```{r, fig.width = 4, fig.height = 2.5}
 #plot(cars$speed, cars$dist)
 ```
 ```
@@ -133,8 +131,7 @@ Use the code chunck options to change the size of a plot :
 50/50 columns can be created with:
 
 
-
-```markdown
+```{markdown}
 .pull-left[
   Content 1
 ]
@@ -144,8 +141,7 @@ Use the code chunck options to change the size of a plot :
 ```
 
 For left larger columns:
-
-```markdown
+```{markdown}
 .pull-left1[
   Content 1
 ]
@@ -156,8 +152,7 @@ For left larger columns:
 
 Or right larger columns:
 
-
-```markdown
+```{markdown}
 .pull-left2[
   Content 1
 ]
@@ -172,20 +167,17 @@ Instead of using columns, you can define the content position with:
 
 
 Left aligned
-
-```markdown
+```{markdown}
 .left[text here]
 ```
 
 Center aligned
-
-```markdown
+```{markdown}
 .left[text here]
 ```
 
 Right aligned
-
-```markdown
+```{markdown}
 .left[text here]
 ```
 
@@ -193,8 +185,7 @@ Right aligned
 
 And also text size:
 
-
-```markdown
+```{markdown}
 .fontX[
   Content here
 ]
@@ -207,8 +198,7 @@ Where `X` can be anything between `10` (.font10[very small]) and `200` (.font200
 
 $\LaTeX$ math expressions can be writen between `$$`:
 
-
-```markdown
+```{markdown}
 $$
   \bar{X}=\frac{1}{n}\sum_{i=1}^nX_i
 $$
@@ -219,7 +209,6 @@ $$
 
 This macro is just to easily insert text on the bottom of the slide:
 
-
-```markdown
+```{markdown}
 .cite[Talluto et al. [2017](https://link) Nat. Ecol. Evol.]
 ```
