@@ -29,6 +29,8 @@ mypar = list(mar = c(3,3,0.5,0.5), mgp = c(1.5, 0.3, 0), tck = -.008)
 ```
 class: middle, title-slide
 
+<div class="my-logo-left"></div>
+
 # Title of my talk template
 
 <hr width="65%" align="left" size="0.3" color="orange"></hr>
@@ -37,7 +39,7 @@ class: middle, title-slide
 
 ### Willian Vieira, .small[PhD candidate <br> + Collaborators]
 
-<br><br><br><br><br>
+<br><br><br><br>
 <i class="fa fa-github fa-lg" style="color:#e7e8e2"></i> [WillVieira/talkTemplate](https://github.com/willvieira/talkTemplate)
 
 <i class="fa fa-twitter fa-lg" style="color:#e7e8e2"></i> [@WillVieira90](https://twitter.com/willvieira90)

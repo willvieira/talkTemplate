@@ -9,6 +9,18 @@
     padding: 8em 2em 1em 2em!important;
   }
 
+  .my-logo-left {
+    content: "";
+        position: absolute;
+        top:    33px;
+        left:   49px;
+        height: 40px;
+        width:  420px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../../images/logo2.png);
+   }
+
   .title-slide h1 {
     color: #e7e8e2;
     font-size: 47px!important;
