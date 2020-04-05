@@ -9,10 +9,10 @@ server:
 	Rscript -e "xaringan::infinite_moon_reader('$(IND).Rmd')"
 
 pdf:
-	`npm bin`/decktape --chrome-arg=--allow-file-access-from-files index.html slides.pdf
+	Rscript -e "pagedown::chrome_print(input = 'index.html', output = 'slides.pdf')"
 
 install:
-	Rscript -e 'if (!require(remotes)) install.packages("remotes"); if (!require(rmarkdown)) install.packages("rmarkdown"); if (!require(knitr)) install.packages("knitr"); if (!require(xaringan)) remotes::install_github("yihui/xaringan"); if (!require(emo)) remotes::install_github("hadley/emo"); if (!require(DT)) remotes::install_github("rstudio/DT")'
+	Rscript -e 'if (!require(remotes)) install.packages("remotes"); if (!require(rmarkdown)) install.packages("rmarkdown"); if (!require(knitr)) install.packages("knitr"); if (!require(xaringan)) remotes::install_github("yihui/xaringan"); if (!require(pagedown)) remotes::install_github("rstudio/pagedown") ; if (!require(emo)) remotes::install_github("hadley/emo"); if (!require(DT)) remotes::install_github("rstudio/DT")'
 
 clean:
 	rm -rf index_cache index_files index.html

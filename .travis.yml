@@ -7,9 +7,14 @@ os:
   - linux
 #  - osx
 
+addons:
+  chrome: stable
+
 install: make install    
 
-script: make
+script:
+  - make
+  - make pdf
 
 before_deploy:
   - mkdir docs
@@ -18,6 +23,7 @@ before_deploy:
   - mv assets docs/
   - mv conf docs/
   - mv images docs/
+  - mv slides.pdf docs/
 
 deploy:
   provider: pages
