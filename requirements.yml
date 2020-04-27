@@ -1,8 +1,8 @@
 r_packages:
   - rmarkdown
   - knitr
+  - xaringan
+  - DT
+  - pagedown
 r_github_packages:
-  - yihui/xaringan
   - hadley/emo
-  - rstudio/DT
-  - rstudio/pagedown
