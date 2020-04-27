@@ -38,11 +38,12 @@ But you need Google Chrome installed (or other chromium such as Brave; although 
 
 Note that if you have activated travis to build your presentation, it will automatically compile a pdf and push it to the gh-pages branch.
 
-## Host your presentation on GitHub with Travis (*TODO*)
-- Activate Travis to use your presentation repo
-- [Generate](https://docs.travis-ci.com/user/deployment/pages/) a GitHub token to allow travis to push to your gh-pages branch
-- Trigger a build by pushing a commit
-
+## Host your presentation on GitHub with Travis
+- Sign in on [Travis-ci.org](https://travis-ci.org/), open [this](https://travis-ci.org/account/repositories) page, and activate Travis to integrate your presentation repo
+- [Generate](https://docs.travis-ci.com/user/deployment/pages/#setting-the-github-token) a GitHub token to allow travis to push to your gh-pages branch
+- On the Settings page of your activated repo (https://travis-ci.org/github/USERNAME/REPONAME/settings), add the token generated on GitHub as an Environment Variables with name `GITHUB_PAT`
+- Update the badges link on the `README.md` with your repo name
+- Now after a commit, travis will compile your presentation in both `html` and `pdf`, and push them to the gh-pages branch
 
 ## Slide content
 
