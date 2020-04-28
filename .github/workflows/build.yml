@@ -3,7 +3,7 @@ on:
     branches:
       - master
 
-      name: Build
+name: Build
 
 jobs:
   Build_deploy:
