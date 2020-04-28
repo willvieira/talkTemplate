@@ -73,7 +73,7 @@ class: middle, center, inverse
 ---
 # Workflow
 
-It is recomended to install all (R packages `r emo::ji("package")`) dependencies:
+It is recomended to install all (R packages) dependencies:
 
 ```make
 make install
