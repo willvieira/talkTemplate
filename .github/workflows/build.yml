@@ -1,0 +1,48 @@
+on:
+  push:
+    branches:
+      - master
+
+      name: Build
+
+jobs:
+  Build_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: r-lib/actions/setup-r@v1
+        with:
+            r-version: '3.6.0'
+
+      - name: Install system dependencies
+        if: runner.os == 'Linux'
+        env:
+          RHUB_PLATFORM: linux-x86_64-ubuntu-gcc
+        run: |
+          sudo apt-get install libcurl4-openssl-dev
+
+      - name: Install dependencies
+        run: make install
+
+      - name: build html
+        run: make
+        
+      - name: build pdf
+        run: make pdf
+
+      - name: prepare deployment
+        run: |
+          mkdir docs
+          mv index.html docs/
+          mv index_files docs/
+          mv assets docs/
+          mv conf docs/
+          mv images docs/
+          mv slides.pdf docs/
+      
+      - name: Deploy gh_pages
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: docs
