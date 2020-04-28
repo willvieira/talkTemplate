@@ -8,6 +8,11 @@ os:
 #  - osx
 
 addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+
+addons:
   chrome: stable
 
 install: make install    
