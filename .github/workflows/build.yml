@@ -20,6 +20,8 @@ jobs:
           RHUB_PLATFORM: linux-x86_64-ubuntu-gcc
         run: |
           sudo apt-get install libcurl4-openssl-dev
+          sudo apt-get install libglu1-mesa-dev
+          sudo apt-get install libmagick++-dev
 
       - name: Install dependencies
         run: make install
