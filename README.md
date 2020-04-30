@@ -39,10 +39,11 @@ But you need Google Chrome installed (or other chromium such as Brave; although 
 Note that if you have activated GitHub actions to build your presentation, it will automatically compile a pdf and push it to the gh-pages branch.
 
 ## Host your presentation on GitHub
-- [Generate](https://docs.travis-ci.com/user/deployment/pages/#setting-the-github-token) a GitHub token to allow GitHub actions to push to your gh-pages branch
-- On the Settings page of your repo (https://github.com/USERNAME/REPONAME/settings/secrets), open the secrets option and add the token generated on GitHub as an Environment Variables with name `GITHUB_PAT`
+- On the Settings page of your repo (https://github.com/USER_NAME/REPO_NAME/settings/), go to the GitHub Pages section and make sure the Source used is the `gh-pages branch`
 - Update the badges link on the `README.md` with your repo name
 - Now after a commit, GitHub actions will compile your presentation in both `html` and `pdf`, and push them to the gh-pages branch
+
+*Note: after forking the template, it usually takes few hours to your presentation be available on the link https://USER_NAME.github.io/REPO_NAME/*
 
 ## Slide content
 
