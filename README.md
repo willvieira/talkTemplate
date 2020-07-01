@@ -2,6 +2,15 @@
 
 ![Build](https://github.com/willvieira/talkTemplate/workflows/Build/badge.svg) [![html](https://img.shields.io/badge/read-html-blue)](https://willvieira.github.io/talkTemplate/#1) [![pdf](https://img.shields.io/badge/read-pdf-yellow)](https://willvieira.github.io/talkTemplate/slides.pdf)
 
+## Abstract
+
+Here it goes the abstract of the slides. I show here how to setup this template, basic syntax for creating the content, and some `JS` macros.
+
+## Take home messages
+
+- Start with a template is much easier to start your presentation
+- Here you don't have to worry about dependencies, deployment and how to generate a PDF
+
 ## Setup
 
 First click on the [Use this template](https://github.com/astefanutti/decktape](https://github.com/PoisotLab/manuscript-template/generate)) button to fork this repository, and clone it to your local.
