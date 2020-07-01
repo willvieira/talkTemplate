@@ -48,21 +48,9 @@ class: middle, title-slide
 
 # Introduction
 
-- Why this templat
-- How to use it?
+- How to setup
 - Content
-
----
-class: middle, center, inverse
-
-# Why this template?
-<hr width="100%" align="left" size="0.3" color="orange"></hr>
-
----
-# Why this template?
-
-- Just for fun 😁
-- But also to make my life easier
+- JS libraries
 
 ---
 class: middle, center, inverse
@@ -201,7 +189,7 @@ Use the code chunck options to change the size of a plot :
 
 ```{r echo=FALSE, class.output="r", comment=""}
 cat(paste(sep = "\n",
-  "```{r, fig.width = 4, fig.height = 2.5}",
+  "\```{r, fig.width = 4, fig.height = 2.5}",
   "plot(cars$speed, cars$dist)",
   "```"
 ))
@@ -333,11 +321,40 @@ This macro is just to easily insert text on the bottom of the slide:
 
 .cite[Talluto et al. [2017](https://www.nature.com/articles/s41559-017-0182) Nat. Ecol. Evol.]
 
+---
+# Icons
+
+You can use both [Font awesome](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/) icons
+
+.pull-left[
+Font awesome icons (`faic`)
+
+```{markdown}
+![:faic](pagelines)
+```
+![:faic](pagelines) 
+]
+.pull-right[
+Academic icons (`acid`)
+
+```{markdown}
+![:acic](orcid)
+```
+![:acic](orcid)
+]
+
+<br>
+You can also ajust their size with the following argument:
+
+```{markdown}
+![:faic 2](pagelines)
+```
+![:faic 2](pagelines) 
 
 ---
 class: middle, center, inverse
 
-# JS libraries
+# ![:faic](js) libraries
 <hr width="100%" align="left" size="0.3" color="orange"></hr>
 
 

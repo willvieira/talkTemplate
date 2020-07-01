@@ -7,7 +7,7 @@ remark.macros.scale = function (percentage) {
 // Font-awesome icons (versio 4.7)
 remark.macros.faic = function (size = 2) {
   var name = this;
-  return '<i class="fa fa-'+ name + ' fa-'+ size + 'x" aria-hidden="true"></i>';
+  return '<i class="fab fa-'+ name + ' fa-'+ size + 'x" aria-hidden="true"></i>';
 };
 
 // Academicons
