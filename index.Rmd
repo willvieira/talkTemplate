@@ -290,6 +290,20 @@ print(seq(10, 200, 10))
 ]
 
 ---
+# Animation
+
+Using `--` between lines
+
+--
+- you
+
+--
+- can
+
+--
+- animate
+
+---
 # Math
 
 $\LaTeX$ math expressions can be writen between `$$`:
