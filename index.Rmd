@@ -9,7 +9,7 @@ output:
     seal: false
     css: ["default", "conf/css/style.css", "conf/css/fonts.css"]
     nature:
-      beforeInit: "conf/style-macros.js"
+      beforeInit: ["conf/js/style-macros.js"]
 ---
 
 ```{r setup, echo = F}

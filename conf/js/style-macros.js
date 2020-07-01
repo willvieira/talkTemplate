@@ -21,3 +21,13 @@ remark.macros.upper = function () {
   // `this` is the value in the parenthesis, or undefined if left out
   return this.toUpperCase();
 };
+
+// Prevents the autoplaying of the animated Gifs
+window.onload = function() {
+  Gifffer();
+}
+
+remark.macros.giffer = function (percentage) {
+  var url = this;
+  return '<img data-gifffer="' + url + '" style="width: ' + percentage + '" />';
+};
