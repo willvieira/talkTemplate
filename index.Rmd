@@ -9,7 +9,7 @@ output:
     seal: false
     css: ["default", "conf/css/style.css", "conf/css/fonts.css"]
     nature:
-      beforeInit: ["conf/js/style-macros.js"]
+      beforeInit: ["conf/js/gifffer.min.js", "conf/js/style-macros.js"]
 ---
 
 ```{r setup, echo = F}
@@ -332,6 +332,31 @@ This macro is just to easily insert text on the bottom of the slide:
 .center[![:scale 70%](images/Talluto1.png)]
 
 .cite[Talluto et al. [2017](https://www.nature.com/articles/s41559-017-0182) Nat. Ecol. Evol.]
+
+
+---
+class: middle, center, inverse
+
+# JS libraries
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+
+---
+# `Gifffer`
+
+> JavaScript library that prevents the autoplaying of the animated Gifs
+
+Instead of adding a gif with the same syntax of an image (which plays automatically), you can use the `giffer` JS macro:
+
+```{markdown}
+![:giffer 80%](images/RCP6_enrich.gif)
+```
+
+Where `80%` is the width of the gif
+
+.center[
+  ![:giffer 80%](https://github.com/willvieira/talk_STM-BScUdeS/raw/master/images/RCP6_enrich.gif)
+]
 
 ---
 # More ressources
