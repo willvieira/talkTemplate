@@ -7,3 +7,4 @@ r_packages:
   - pagedown
 r_github_packages:
   - hadley/emo
+  - gadenbuie/xaringanExtra

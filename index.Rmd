@@ -25,7 +25,17 @@ knitr::opts_chunk$set(
   fig.retina = 3
 )
 
+# base plot layout
 mypar = list(mar = c(3,3,0.5,0.5), mgp = c(1.5, 0.3, 0), tck = -.008)
+
+# xaringan Extra
+xaringanExtra::use_xaringan_extra(c("tile_view", "animate_css", "tachyons"))
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+xaringanExtra::use_editable(expires = 1)
+xaringanExtra::use_panelset()
 ```
 class: middle, title-slide
 
@@ -50,6 +60,7 @@ class: middle, title-slide
 
 - How to setup
 - Content
+- `xaringanExtra` extensions
 - JS libraries
 
 ---
@@ -368,6 +379,86 @@ You can also ajust their size with the following argument:
 ---
 class: middle, center, inverse
 
+# 📦 `{xaringanExtra}`
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+---
+# `{xaringanExtra}`
+
+This awesome R package provides enhancements for xaringan such as
+
+> - Add an overview of your presentation with tile view
+> - Make your slides editable
+> - Announce slide changes with a subtle tone
+> - Animate slide transitions with animate.css
+> - Add tabbed panels to slides with panelset
+> - Add a logo to all of your slides with logo
+> - Use the Tachyons CSS utility toolkit
+> - Add a live video feed of your webcam
+> - Fit your slides to fill the browser window
+> - Add extra CSS styles
+
+Take a look in their full documentation [here](https://pkg.garrickadenbuie.com/xaringanExtra/#/)
+
+I added some examples in the following slides...
+
+---
+# `{xaringanExtra}` tile view
+
+Press the letter "o" 😲
+
+---
+# `{xaringanExtra}` Editable slides
+
+Just use the following class:
+
+```{markdown}
+.can-edit[ ... ]
+```
+
+What do you think?
+
+.can-edit[
+  -
+]
+
+---
+# `{xaringanExtra}` Panelset
+
+.panelset[
+.panel[.panel-name[Code]
+```{r}
+x = rnorm(100, 10, 4)
+y = rnorm(100, 2, 1)
+```
+]
+
+.panel[.panel-name[Plot]
+```{r}
+plot(x, y)
+```
+]
+
+.panel[.panel-name[How?]
+```{markdown}
+.panelset[
+  
+  .panel[.panel-name[Code]
+    ...
+  ]
+
+  .panel[.panel-name[Plot]
+    ...
+  ]
+]
+```
+]
+]
+
+
+---
+class: middle, center, inverse
+
 # ![:faic](js) libraries
 <hr width="100%" align="left" size="0.3" color="orange"></hr>
 
@@ -375,7 +466,7 @@ class: middle, center, inverse
 ---
 # `Gifffer`
 
-> JavaScript library that prevents the autoplaying of the animated Gifs
+> [Gifffer](https://github.com/krasimir/gifffer) prevents the autoplaying of the animated Gifs
 
 Instead of adding a gif with the same syntax of an image (which plays automatically), you can use the `giffer` JS macro:
 
@@ -396,7 +487,7 @@ You can check the `xaringan` presentation (which this template relies on):
 
 https://slides.yihui.org/xaringan/#1
 
-And also check all remark.js fonctionalities you could be using:
+And also check all remark.js fonctionalities available in this template:
 
 https://remarkjs.com/#1
 
