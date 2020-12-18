@@ -52,9 +52,9 @@ class: middle, title-slide
 ### Willian Vieira, .small[PhD candidate <br> + Collaborators]
 
 <br><br><br><br><br>
-<i class="fa fa-github fa-lg" style="color:#e7e8e2"></i> [WillVieira/talkTemplate](https://github.com/willvieira/talkTemplate)
+[<i class="fa fa-github fa-lg" style="color:#e7e8e2"></i> WillVieira/talkTemplate](https://github.com/willvieira/talkTemplate)
 
-<i class="fa fa-twitter fa-lg" style="color:#e7e8e2"></i> [@WillVieira90](https://twitter.com/willvieira90)
+[<i class="fa fa-twitter fa-lg" style="color:#e7e8e2"></i> @WillVieira90](https://twitter.com/willvieira90)
 
 ---
 
