@@ -9,18 +9,28 @@
     padding: 10em 2em 1em 2em!important;
   }
 
-  .my-logo-left {
+  .lab-logo {
     content: "";
         position: absolute;
-        top:    33px;
-        left:   49px;
-        height: 40px;
-        width:  420px;
+    top:    15px;
+    left:   35px;
+    height: 70px;
+    width:  220px;
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url(../../images/logo2.png);
+    background-image: url(../../images/IE_logo_renversé.png);
    }
-
+   .uni-logo {
+    content: "";
+    position: absolute;
+    top:    32px;
+    left:   243px;
+    height: 34px;
+    width:  220px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../images/udes.png);
+   }
   .title-slide h1 {
     color: #e7e8e2;
     font-size: 47px!important;

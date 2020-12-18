@@ -39,7 +39,9 @@ xaringanExtra::use_panelset()
 ```
 class: middle, title-slide
 
-<div class="my-logo-left"></div>
+<!-- top logo (comment to remove or edit on `conf/css/style.css:23`) -->
+<div class="lab-logo"></div>
+<!-- <div class="uni-logo"></div> -->
 
 # Title of my talk template
 
