@@ -292,11 +292,3 @@ a {
   .font200 {
     font-size: 200%;
   }
-
-
-/* MathJax */
-  .mjx-chtml{
-    font-size: 105% !important;
-    float: left !important;
-    padding: 0em 0em 0em 4.5em !important;
-  }
