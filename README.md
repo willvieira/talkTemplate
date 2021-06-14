@@ -13,7 +13,7 @@ Here it goes the abstract of the slides. I show here how to setup this template,
 
 ## Setup
 
-First click on the [Use this template](https://github.com/astefanutti/decktape](https://github.com/PoisotLab/manuscript-template/generate)) button to fork this repository, and clone it to your local.
+First click on the [Use this template](https://github.com/willvieira/talkTemplate/generate) button to fork this repository, and clone it to your local.
 
 It is recomended to install all (R packages 📦) dependencies:
 
