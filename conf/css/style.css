@@ -1,0 +1,294 @@
+/*title page*/
+  .title-slide {
+    background-image: url('../../images/bg.jpg');
+    background-color: #23373B;
+    background-size: contain;
+    border: 0px;
+    background-position: 600px 0;
+    line-height: 1;
+    padding: 10em 2em 1em 2em!important;
+  }
+
+  .lab-logo {
+    content: "";
+    position: absolute;
+    top:    15px;
+    left:   35px;
+    height: 73px;
+    width:  220px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../images/IE_logo_renversé.png);
+   }
+   .uni-logo {
+    content: "";
+    position: absolute;
+    top:    32px;
+    left:   243px;
+    height: 34px;
+    width:  220px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../images/udes.png);
+   }
+  .title-slide h1 {
+    color: #e7e8e2;
+    font-size: 42px!important;
+    font-weight: normal;
+    margin-top: 0px;
+    width: 65%;
+    margin-block-end: 0;
+  }
+
+  .title-slide h2 {
+    color: #e7e8e2;
+    font-size: 35px;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 65%;
+  }
+
+  .title-slide h3 {
+    color: #e7e8e2;
+    font-size: 24px;
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 65%;
+  }
+
+  .title-slide a {
+    color: #e7e8e2;
+    font-size: 16px;
+    font-weight: lighter;
+
+  }
+
+  h1 {
+    color: #000000;
+    font-size: 42px!important;
+    font-weight: normal;
+    margin-top: 0px;
+  }
+
+  /* remove page number in first slide*/
+  .title-slide .remark-slide-number {
+  display: none;
+  }
+
+  /* remove page number in first slide*/
+  .inverse .remark-slide-number {
+  display: none;
+  }
+
+  /* the part where I add event logo and Github*/
+  .title-slide p {
+    font-family: 'Fira Sans';
+    text-align: left;
+    font-weight: lighter;
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+/* slide pages */
+  .remark-slide-content {
+    font-size: 23px;
+    font-weight: 300;
+    padding: 1em 2em 1em 2em
+  }
+
+  .remark-slide-content h2{
+    margin: .31em .1em;
+  }
+
+  .remark-slide-content h3{
+    margin: 2em .1em;
+  }
+
+  .remark-slide-content li {
+  line-height: 1.5
+  }
+
+/* citation in bottomright page*/
+.cite {
+    bottom: 12px;
+    font-style: italic;
+    opacity: .8;
+    position: absolute;
+    right: 100px;
+    font-size: 17px;
+}
+
+/* page number*/
+.remark-slide-number {
+  font-size: 13pt;
+  font-family: 'Fira Sans';
+  font-weight: lighter;
+  color: #272822;
+  opacity: 1;
+  position: absolute;
+}
+
+/* hyperlink color */
+a {
+  color: #42766a;
+}
+
+/* background color of inverse slide */
+.inverse {
+    background-color: #23373B;
+    color: #d6d6d6;
+}
+.inverse h1 {
+  font-size: 54px!important;
+  width: 100%;
+}
+
+/* Column */
+  .pull-left {
+    float: left;
+    width: 47%;
+  }
+  .pull-right {
+    float: right;
+    width: 47%;
+  }
+
+  .pull-left1 {
+    float: left;
+    width: 57%;
+  }
+  .pull-right1 {
+    float: right;
+    width: 37%;
+  }
+
+  .pull-left2 {
+    float: left;
+    width: 67%;
+  }
+  .pull-right2 {
+    float: right;
+    width: 27%;
+  }
+
+/* Font size */
+  .code10 .remark-code {
+    font-size: 10%;
+  }
+
+  .code20 .remark-code {
+    font-size: 20%;
+  }
+
+  .code30 .remark-code {
+    font-size: 30%;
+  }
+
+  .code40 .remark-code {
+    font-size: 40%;
+  }
+
+  .code50 .remark-code {
+    font-size: 50%;
+  }
+
+  .code60 .remark-code {
+    font-size: 60%;
+  }
+
+  .code70 .remark-code {
+    font-size: 70%;
+  }
+
+  .code80 .remark-code {
+    font-size: 80%;
+  }
+
+  .code90 .remark-code {
+    font-size: 90%;
+  }
+
+  .code100 .remark-code {
+    font-size: 100%;
+  }
+
+  .font10 {
+    font-size: 10%;
+  }
+
+  .font20 {
+    font-size: 20%;
+  }
+
+  .font30 {
+    font-size: 30%;
+  }
+
+  .font40 {
+    font-size: 40%;
+  }
+
+  .font50 {
+    font-size: 50%;
+  }
+
+  .font60 {
+    font-size: 60%;
+  }
+
+  .font70 {
+    font-size: 70%;
+  }
+
+  .font80 {
+    font-size: 80%;
+  }
+
+  .font90 {
+    font-size: 90%;
+  }
+
+  .font100 {
+    font-size: 100%;
+  }
+
+  .font110 {
+    font-size: 110%;
+  }
+
+  .font120 {
+    font-size: 120%;
+  }
+
+  .font130 {
+    font-size: 130%;
+  }
+
+  .font140 {
+    font-size: 140%;
+  }
+
+  .font150 {
+    font-size: 150%;
+  }
+
+  .font160 {
+    font-size: 160%;
+  }
+  .font170 {
+    font-size: 170%;
+  }
+  .font180 {
+    font-size: 180%;
+  }
+  .font190 {
+    font-size: 190%;
+  }
+  .font200 {
+    font-size: 200%;
+  }
