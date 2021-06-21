@@ -40,7 +40,9 @@ jobs:
         run: |
           mkdir docs
           mv index.html docs/
-          mv index_files docs/
+          if [ -d index_files ]; then
+            mv index_files docs/
+          fi
           mv assets docs/
           mv conf docs/
           mv images docs/
