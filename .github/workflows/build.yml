@@ -1,31 +1,38 @@
 on:
   push:
     branches:
+      - main
       - master
 
 name: Build
 
 jobs:
   Build_deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
+    env:
+      RSPM: https://packagemanager.rstudio.com/cran/__linux__/bionic/latest
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
       - uses: actions/checkout@master
-      - uses: r-lib/actions/setup-pandoc@v1
-        with:
-          pandoc-version: '2.14.1'
-      - uses: r-lib/actions/setup-r@v1
-        with:
-            r-version: '4.1.2'
 
-      - name: Install system dependencies
-        if: runner.os == 'Linux'
-        env:
-          RHUB_PLATFORM: linux-x86_64-ubuntu-gcc
+      - uses: r-lib/actions/setup-r@v1
+        id: install-r
+
+      - uses: r-lib/actions/setup-pandoc@
+
+      - name: Install pak and query dependencies
         run: |
-          sudo apt-get install libpoppler-cpp-dev
-          sudo apt-get install libcurl4-openssl-dev
-          sudo apt-get install libglu1-mesa-dev
-          sudo apt-get install libmagick++-dev
+          install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
+          saveRDS(pak::pkg_deps("local::.", dependencies = TRUE), ".github/r-depends.rds")
+        shell: Rscript {0}
+
+      - name: Restore R package cache
+        uses: actions/cache@v2
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ubuntu-18.04-${{ steps.install-r.outputs.installed-r-version }}-1-${{ hashFiles('.github/r-depends.rds') }}
+          restore-keys: ubuntu-18.04-${{ steps.install-r.outputs.installed-r-version }}-1-
 
       - name: Install dependencies
         run: make install
@@ -49,9 +56,8 @@ jobs:
           mv slides.pdf docs/
       
       - name: Deploy gh_pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: docs
           SINGLE_COMMIT: true
