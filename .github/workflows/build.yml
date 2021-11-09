@@ -12,10 +12,10 @@ jobs:
       - uses: actions/checkout@master
       - uses: r-lib/actions/setup-pandoc@v1
         with:
-          pandoc-version: '2.7.3'
+          pandoc-version: '2.14.1'
       - uses: r-lib/actions/setup-r@v1
         with:
-            r-version: '3.6.0'
+            r-version: '4.1.2'
 
       - name: Install system dependencies
         if: runner.os == 'Linux'
