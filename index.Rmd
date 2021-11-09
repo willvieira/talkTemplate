@@ -9,6 +9,8 @@ output:
     seal: false
     css: ["default", "conf/css/style.css", "conf/css/fonts.css"]
     nature:
+      highlightStyle: solarized-light
+      highlightLines: true
       beforeInit: ["conf/js/gifffer.min.js", "conf/js/style-macros.js"]
 ---
 
