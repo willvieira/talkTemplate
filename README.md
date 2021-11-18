@@ -13,7 +13,7 @@ Here it goes the abstract of the slides. I show here how to setup this template,
 
 ## Setup
 
-First click on the [Use this template](https://github.com/willvieira/talkTemplate/generate) button to fork this repository, and check the option `Include all branches`.
+First click on the [Use this template](https://github.com/willvieira/talkTemplate/generate) button to fork this repository.
 
 After cloning the forked repository to your local computer, it is recomended to install all (R packages 📦) dependencies:
 
