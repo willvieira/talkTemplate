@@ -8,21 +8,25 @@ name: Build
 
 jobs:
   Build_deploy:
-    runs-on: ubuntu-18.04
-    env:
-      RSPM: https://packagemanager.rstudio.com/cran/__linux__/bionic/latest
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v4
 
-      - uses: r-lib/actions/setup-r@v1
-        id: install-r
-
-      - uses: r-lib/actions/setup-pandoc@v1
+      - uses: r-lib/actions/setup-pandoc@v2
+        with:
+             pandoc-version: '2.17.1'
+    
+      - name: Install R
+        uses: r-lib/actions/setup-r@v2
+        with:
+            r-version: '4.2.0'
+            use-public-rspm: true
 
       - name: Install dependencies
         run: make install
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
       - name: build html
         run: make
@@ -43,7 +47,7 @@ jobs:
           mv slides.pdf docs/
       
       - name: Deploy gh_pages
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           BRANCH: gh-pages
           FOLDER: docs
