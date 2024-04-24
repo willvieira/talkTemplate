@@ -74,6 +74,13 @@ class: middle, center, inverse
 <hr width="100%" align="left" size="0.3" color="orange"></hr>
 
 ---
+class: middle, center, inverse-old
+
+# How to use it?
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+
+---
 # Workflow
 
 It is recomended to install all (R packages `r emo::ji("package")`) dependencies:
